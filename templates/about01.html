@@ -1,0 +1,24 @@
+{% extends 'base01.html' %}
+
+{% block content %}
+   {{super()}}
+ <div class="container">
+        <section>
+            <h2>About Us</h2>
+            <p>Here you can provide a description of your company, its mission, values, etc.</p>
+        </section>
+        <section>
+            <h2>Our Services</h2>
+            <ul>
+                {% for m in menu %}
+                <li>{{m}}</li>
+                {% endfor %}
+            </ul>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <p>Email: your.email@example.com</p>
+            <p>Phone: +1234567890</p>
+        </section>
+    </div>
+{% endblock %}
