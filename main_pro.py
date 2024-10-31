@@ -20,6 +20,8 @@ def contact():
     print(request.form)
     return render_template('contact_pro.html', title="TenshI")
 
+
+
 if __name__ == '__main__':
    # app.run(debug=True)
     app.run(host='0.0.0.0')
